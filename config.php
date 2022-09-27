@@ -48,112 +48,112 @@ $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 
 $THEME->scss = function ($theme) {
-    return theme_uva_get_main_scss_content($theme);
+  return theme_uva_get_main_scss_content($theme);
 };
 
 // This is a function that returns some SCSS as a string to prepend to the main SCSS file.
-$THEME->prescsscallback = 'theme_uva_get_pre_scss';
+/*$THEME->prescsscallback = 'theme_uva_get_pre_scss';
 
 // This is a function that returns some SCSS as a string to append to the main SCSS file.                                          
-$THEME->extrascsscallback = 'theme_uva_get_extra_scss';
+$THEME->extrascsscallback = 'theme_uva_get_extra_scss';*/
 
 
 $THEME->layouts = [
-    // 'base' => [
-    //   'file' => 'columns2.php',
-    //   'regions' => [],
-    // ],
-    // 'standard' => [
-    //   'file' => 'columns2.php',
-    //   'regions' => [],
-    // ],
-    // // Course Pages
-    // 'course' => [
-    //   'file' => 'course.php',
-    //   'regions' => [],
-    //   //'defaultregion' => 'side-pre',
-    // ],
-    /*
-    'coursecategory' => [
-      'file' => 'columns2.php',
-      'regions' => ['side-pre'],
-      'defaultregion' => 'side-pre',
-    ],
-     */
-    // 'incourse' => [
-    //   'file' => 'incourse.php',
-    //   'regions' => ['side-pre'],
-    //   'defaultregion' => 'side-pre',
-    // ],
-    // // Server admin scripts
-    // 'admin' => [
-    //   'file' => 'columns2.php',
-    //   'regions' => [],
-    // ],
-    // Landing page.
-    'frontpage' => [
-      'file' => 'frontpage.php',
-      'regions' => ['side-pre'],
-      'defaultregion' => 'side-pre',
-    ],
-    // // User Dashboard
-    // 'mydashboard' => [
-    //   'file' => 'mydashboard.php',
-    //   'regions' => ['side-post'],
-    //   'defaultregion' => 'side-post',
-    // ],
-    // 'login' => [
-    //   'file' => 'login.php',
-    //   'regions' => ['side-pre'],
-    //   'defaultregion' => '',
-    // ],
-    // // My Public Page
-    // 'mypublic' => [
-    //   'file' => 'mypublic.php',
-    //   'regions' => [],
-    // ],
-    // Pages that appear in pop-up windows, no navigation, no blocks, no header
-    /* 'popup' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // Pages like iframe/object in moodleform
-    /* 'embedded' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // For upgrade, install, or 'This site is undergoing maintenance' msg
-    // It must have no blocks, links or API calls that would lead to database
-    // or cache interaction, be careful when modifying the layout
-    /* 'maintenance' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // Should display the content and basic headers only
-    /* 'print' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // When a redirection is occuring
-    /*'redirect' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // For Reports
-    /* 'report' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-    // For safebrowser and securewindow
-    /* 'secure' => [
-      'file' => '',
-      'regions' => [''],
-      'defaultregion' => '',
-    ], */
-  ];
+  // 'base' => [
+  //   'file' => 'columns2.php',
+  //   'regions' => [],
+  // ],
+  // 'standard' => [
+  //   'file' => 'columns2.php',
+  //   'regions' => [],
+  // ],
+  // // Course Pages
+  // 'course' => [
+  //   'file' => 'course.php',
+  //   'regions' => [],
+  //   //'defaultregion' => 'side-pre',
+  // ],
+  /*
+  'coursecategory' => [
+    'file' => 'columns2.php',
+    'regions' => ['side-pre'],
+    'defaultregion' => 'side-pre',
+  ],
+    */
+  // 'incourse' => [
+  //   'file' => 'incourse.php',
+  //   'regions' => ['side-pre'],
+  //   'defaultregion' => 'side-pre',
+  // ],
+  // // Server admin scripts
+  // 'admin' => [
+  //   'file' => 'columns2.php',
+  //   'regions' => [],
+  // ],
+  // Landing page.
+  /*'frontpage' => [
+    'file' => 'frontpage.php',
+    'regions' => ['side-pre'],
+    'defaultregion' => 'side-pre',
+  ],*/
+  // // User Dashboard
+  // 'mydashboard' => [
+  //   'file' => 'mydashboard.php',
+  //   'regions' => ['side-post'],
+  //   'defaultregion' => 'side-post',
+  // ],
+  'login' => [
+    'file' => 'login.php',
+    'regions' => ['side-pre'],
+    'defaultregion' => '',
+  ],
+  // // My Public Page
+  // 'mypublic' => [
+  //   'file' => 'mypublic.php',
+  //   'regions' => [],
+  // ],
+  // Pages that appear in pop-up windows, no navigation, no blocks, no header
+  /* 'popup' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // Pages like iframe/object in moodleform
+  /* 'embedded' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // For upgrade, install, or 'This site is undergoing maintenance' msg
+  // It must have no blocks, links or API calls that would lead to database
+  // or cache interaction, be careful when modifying the layout
+  /* 'maintenance' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // Should display the content and basic headers only
+  /* 'print' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // When a redirection is occuring
+  /*'redirect' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // For Reports
+  /* 'report' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+  // For safebrowser and securewindow
+  /* 'secure' => [
+    'file' => '',
+    'regions' => [''],
+    'defaultregion' => '',
+  ], */
+];
