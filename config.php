@@ -91,17 +91,17 @@ $THEME->layouts = [
   //   'regions' => [],
   // ],
   // Landing page.
-  /*'frontpage' => [
+  'frontpage' => [
     'file' => 'frontpage.php',
     'regions' => ['side-pre'],
     'defaultregion' => 'side-pre',
-  ],*/
+  ],
   // // User Dashboard
-  // 'mydashboard' => [
-  //   'file' => 'mydashboard.php',
-  //   'regions' => ['side-post'],
-  //   'defaultregion' => 'side-post',
-  // ],
+  'mydashboard' => [
+    'file' => 'mydashboard.php',
+    'regions' => ['side-post'],
+    'defaultregion' => 'side-post',
+  ],
   'login' => [
     'file' => 'login.php',
     'regions' => ['side-pre'],

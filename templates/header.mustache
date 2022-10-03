@@ -1,0 +1,60 @@
+{{!
+This file is part of Moodle - http://moodle.org/
+
+Moodle is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Moodle is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+
+<header class="fixed-top bg-white">
+  <nav class="navbar navbar-expand-lg navbar-dark border-bottom cabecalho">
+    <div class="container-fluid">
+    <div class="navbar-brand" href="">
+      <img src="{{config.wwwroot}}/theme/uva/pix/ufma_virtual_logo.png" height="50">
+    </div>
+    <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+      <ul class="menutopo">
+        <li style="display:inline-block;"><a style="style="display:inline-block; color:#fff;background:#8D0333;text-decoration:none;   border-radius: 7px 7px 0 0;transition:all .4s linear""class="nav-item" href="{{config.wwwroot}}/?redirect=0">Pagina inicial</a></li>
+        <li style="display:inline-block;"><a  style="color:#444;	text-decoration:none;	padding:1.5rem 16px;" class="nav-item" href="{{config.wwwroot}}/my">Meus cursos</a></li>
+        <li style="display:inline-block;"><a class="nav-item" href="{{config.wwwroot}}/my/courses.php">Painel</a></li>
+      </ul>
+    </div>
+    
+    <!--área de notificações-->
+    <div class="user">
+      <div>
+        <a href="" class="icone sino">
+          <span>2</span>
+        </a>
+      </div>
+      
+      <button class="icouser" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+      <img src="img/ico-user-black.png" class="img-fluid">
+      </button>
+    
+        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+        <div class="card card-body" style="min-width:200px;">
+          <ul class="nav">
+          <li class="nav-link"><a href="" class="text-vermelho-conteporaneo text-none">Área do cliente</a></li>
+          
+          <li class="nav-link"><a href="{{config.wwwroot}}/login/logout.php" class="text-vermelho-conteporaneo text-none">Sair</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+  </nav>
+</header>
