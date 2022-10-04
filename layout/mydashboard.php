@@ -37,7 +37,7 @@ if (isguestuser()){
 // }
  
 $bodyattributes = $OUTPUT->body_attributes();
-//$navbar_menu = $OUTPUT->navbar_menu(true);
+$navbar_menu = $OUTPUT->navbar_menu(true);
 
 $templatecontext = [
   'userid' => $USER->id,
@@ -49,7 +49,7 @@ $templatecontext = [
   'output' => $OUTPUT,
   'bodyattributes' => $bodyattributes,
 
-  /*'navbar_menu' => $navbar_menu,*/
+  'navbar_menu' => $navbar_menu,
 ];
 
 echo $OUTPUT->render_from_template(

@@ -15,21 +15,21 @@ You should have received a copy of the GNU General Public License
 along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 }}
 
-<header class="fixed-top bg-white">
+
   <nav class="navbar navbar-expand-lg navbar-dark border-bottom cabecalho">
     <div class="container-fluid">
-    <div class="navbar-brand" href="">
+    <a class="navbar-brand">
       <img src="{{config.wwwroot}}/theme/uva/pix/ufma_virtual_logo.png" height="50">
-    </div>
+    </a>
     <button class="navbar-toggler bg-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     
     <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
       <ul class="menutopo">
-        <li style="display:inline-block;"><a style="style="display:inline-block; color:#fff;background:#8D0333;text-decoration:none;   border-radius: 7px 7px 0 0;transition:all .4s linear""class="nav-item" href="{{config.wwwroot}}/?redirect=0">Pagina inicial</a></li>
-        <li style="display:inline-block;"><a  style="color:#444;	text-decoration:none;	padding:1.5rem 16px;" class="nav-item" href="{{config.wwwroot}}/my">Meus cursos</a></li>
-        <li style="display:inline-block;"><a class="nav-item" href="{{config.wwwroot}}/my/courses.php">Painel</a></li>
+        <li><a class="nav-item" href="{{config.wwwroot}}/?redirect=0">Pagina inicial</a></li>
+        <li><a class="nav-item" href="{{config.wwwroot}}/my">Meus cursos</a></li>
+        <li><a class="nav-item" href="{{config.wwwroot}}/my/courses.php">Painel</a></li>
       </ul>
     </div>
     
@@ -49,7 +49,9 @@ along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
         <div class="card card-body" style="min-width:200px;">
           <ul class="nav">
           <li class="nav-link"><a href="" class="text-vermelho-conteporaneo text-none">Área do cliente</a></li>
-          
+          {{#is_admin}}
+            <li class="nav-link"><a href="" class="text-vermelho-conteporaneo text-none">Sou ADM</a></li>
+          {{/is_admin}}
           <li class="nav-link"><a href="{{config.wwwroot}}/login/logout.php" class="text-vermelho-conteporaneo text-none">Sair</a></li>
           </ul>
         </div>
@@ -57,4 +59,4 @@ along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
     </div>
     </div>
   </nav>
-</header>
+

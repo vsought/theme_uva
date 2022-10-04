@@ -1,0 +1,19 @@
+<div class="container">
+            <div class="section-title px-4 mx-1 text-md-left text-center">
+                <h3>Cursos disponíveis</h3>
+            </div>
+            <div class="cards-container">
+                <div id="courses-carousel" class="owl-carousel">
+                    {{#courses}}
+                        {{< theme_mtur/course_card }}
+                        {{$url}}{{{link}}}{{/url}}
+                        {{$coursename}}{{name}}{{/coursename}}
+                        {{$courseimage}}{{{image}}}{{/courseimage}}
+                        {{$totalresources}}{{{resources}}}{{/totalresources}}
+                        {{$totalduration}}{{{hours}}}{{/totalduration}}
+                        {{$description}}{{{description}}}{{/description}}
+                        {{/ theme_mtur/course_card }}
+                    {{/courses}}
+                </div>
+            </div>
+        </div>

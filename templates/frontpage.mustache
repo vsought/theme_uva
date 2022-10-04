@@ -5,52 +5,16 @@
 <div class="central">
     {{> theme_uva/header}}
 
-    <div class="container mt-5">
+    <div class="titulo alt mt-4">
+        <div class="container"><div class="text-vermelho-conteporaneo d-inline-block">AVA UFMA</div> virtual</div>
+    </div>
+    <div class="container mt-4">
         <!--Cursos disponiveis-->	
         <h1 class="titulo"><span>Cursos disponíveis</span></h1>
         <div class="item cursos_disponiveis">
-            <ul id="lightslider-demo" class="content-slider">
-            <li>
-                <div class="thumb"><img src="img/image01.jpeg" class="d-block w-100" alt="..."></div>
-                <div class="d-flex py-3 pt-0 justify-content-between text-uppercase">
-                    <small class="small"><b><i class="fa-solid fa-handshake"></i> Empreendedorismo</b></small>
-                    <small class="small"><b><i class="fa-solid fa-circle text-success"></i> Online</b></small>
-                </div>							
-                <div>
-                    <h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-                    <small class="texto mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan nulla urna, quis fermentum dolor sit amet, consectetur adipiscing elit.</small>
-                    <a href="" class="btn btn-primary btn-vermelho-conteporaneo rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-                </div>
-            </li>
-            <li>
-                <div class="thumb"><img src="img/image02.jpeg" class="d-block w-100" alt="..."></div>
-                <div class="d-flex py-3 pt-0 justify-content-between text-uppercase">
-                    <small class="small"><b><i class="fa-sharp fa-solid fa-microchip"></i> Tecnologia</b></small>
-                    <small class="small"><b><i class="fa-solid fa-circle text-success"></i> Online</b></small>
-                </div>							
-                <div>
-                    <h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-                    <small class="texto mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan nulla urna, quis fermentum dolor sit amet, consectetur adipiscing elit.</small>
-                    <a href="" class="btn btn-primary btn-vermelho-conteporaneo rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-                </div>
-            </li>
-            <li>
-                <div class="thumb"><img src="img/image03.jpeg" class="d-block w-100" alt="..."></div>
-                <div class="d-flex py-3 pt-0 justify-content-between text-uppercase">
-                    <small class="small"><b><i class="fa-solid fa-graduation-cap"></i> Educação</b></small>
-                    <small class="small"><b><i class="fa-solid fa-circle text-success"></i> Online</b></small>
-                </div>							
-                <div>
-                    <h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-                    <small class="texto mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus accumsan nulla urna, quis fermentum dolor sit amet, consectetur adipiscing elit.</small>
-                    <a href="" class="btn btn-primary btn-vermelho-conteporaneo rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-                </div>
-            </li>
-            </ul>
+            {{{output.main_content}}}
         </div>
     </div>
-
-    {{{output.main_content}}}
     
         
     
@@ -70,5 +34,3 @@
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
   
-</body>
-</head>
