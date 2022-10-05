@@ -1,0 +1,93 @@
+{{!
+This file is part of Moodle - http://moodle.org/
+
+Moodle is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+Moodle is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
+}}
+{{#error}}
+<div class="text-center">
+  <label class="form-error-label bold" for="">{{error}}</label>
+</div>
+{{/error}}
+<form class="form-style fix-input" action={{loginurl}} method="POST">
+  <input type="hidden" name="logintoken" value="{{logintoken}}">
+  <h2 style="text-align: left;
+            margin-bottom: 20px;">
+      <strong>Fazer login</strong>
+  </h2>
+  
+    
+      <div class="input-group mb-3" id="user-email" style="margin-bottom: 10px !important;">
+        <span class="input-group-text" id="basic-addon1" style="border:1px solid #333333;background-color: #A9A9A9;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </span>
+        <input style="border-top: 1px solid #333333;
+                      border-right: 1px solid #333333;
+                      border-bottom: 1px solid #333333;
+                      border-left: none;"
+              type="text" class="form-control" aria-describedby="emailHelp" name="username" id="username" placeholder="Digite seu email" autofocus>
+      </div>
+      
+
+      <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1" style="border:1px solid #333333;background-color: #A9A9A9;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          </svg>
+        </span>
+        <input style="border-top: 1px solid #333333;
+                      border-right: 1px solid #333333;
+                      border-bottom: 1px solid #333333;
+                      border-left: none;" 
+              type="password" name="password" id="password" placeholder="Senha" class="form-control" aria-describedby="basic-addon1">
+      </div>
+
+      <p style="text-align: left;
+                margin-bottom: 0;">
+                Novo Usuário? 
+                <a href="#"style="color: #861C40;
+                                  text-decoration: none;
+                                  font-weight: bold;
+                                  transition-property: all;
+                                  transition-duration: 0.5s;
+                                  transition-timing-function: ease;">
+                Crie uma conta</a>
+      </p>
+      <p style="text-align: left;
+                margin-bottom: 0;">
+                Esqueceu a senha?
+      </p>
+
+      
+    
+
+    {{! <input type="submit" value="Conecte-se" class="primary-button"> }}
+
+    <input type="submit" value="Conecte-se" class="primary-button"style="border-radius: 20px !important;
+      justify-self: center;
+      margin-top: 20px;background-color: #861C40;
+      color: #FFFFFF;
+      border: none;
+      font-weight: 500;
+      padding: 8px 50px;
+      line-height: normal;
+      transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;">
+</form>
+
+
+
+

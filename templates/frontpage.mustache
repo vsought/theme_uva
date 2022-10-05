@@ -1,0 +1,36 @@
+<!-- Titulo da Pagina -->
+
+<!-- Main -->
+{{> theme_uva/inc_start}}
+<div class="central">
+    {{> theme_uva/header}}
+
+    <div class="titulo alt mt-4">
+        <div class="container"><div class="text-vermelho-conteporaneo d-inline-block">AVA UFMA</div> virtual</div>
+    </div>
+    <div class="container mt-4">
+        <!--Cursos disponiveis-->	
+        <h1 class="titulo"><span>Cursos disponíveis</span></h1>
+        <div class="item cursos_disponiveis">
+            {{{output.main_content}}}
+        </div>
+    </div>
+    
+        
+    
+		
+	<!--Rodape-->
+	{{> theme_uva/footer}}
+</div>
+<script>
+	$function(){		
+		$('.carousel').carousel()
+	}
+</script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<script src="js/kit-wesome.js"></script>
+<script src="js/lightslider.js"></script>
+<script src="js/lightslider-mob.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  
