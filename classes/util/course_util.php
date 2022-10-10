@@ -18,11 +18,11 @@
  * Course class utility class
  *
  * @package    theme_moove
- * @copyright  2022 Willian Mano {@link https://conecti.me}
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright  
+ * @license    
  */
 
-namespace theme_mtur\util;
+namespace theme_uva\util;
 
 use cm_info;
 use course_modinfo;
@@ -32,6 +32,7 @@ use context_module;
 use core_course_list_element;
 use moodle_url;
 use stdClass;
+use core_course_category;
 
 defined('MOODLE_INTERNAL') || die;
 
@@ -117,13 +118,13 @@ class course_util {
      * @throws \moodle_exception
      */
     public function get_category(): string {
-        $cat = core_course_category::get($this->course->category, IGNORE_MISSING);
+      $cat = core_course_category::get($this->course->category, IGNORE_MISSING);
 
-        if (!$cat) {
-            return '';
-        }
+      if (!$cat) {
+          return '';
+      }
 
-        return $cat->get_formatted_name();
+      return $cat->get_formatted_name();
     }
 
     /**

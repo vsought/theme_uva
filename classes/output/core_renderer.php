@@ -230,4 +230,16 @@ class core_renderer extends \theme_boost\output\core_renderer {
     return $this->render_from_template('theme_uva/header', $templatecontext);
   }
 
+  /*
+   * Returns default pix folder.
+   *
+   * @return string
+   */
+  public function get_pix_image_url_base()
+  {
+    global $CFG;
+
+    return $CFG->wwwroot . "/theme/saiteava/pix/";
+  }
+
 }

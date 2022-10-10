@@ -2,18 +2,18 @@
 	
 	
 		
-		<div class="row">
-			<div class="caixa  pb-4">
-				<div class="thumb"><img src="{{courseimage}}" class="d-block w-100" alt="{{fullname}}"></div>															
+		<div class="col-lg-4 col-sm-6 mb-5 d-flex">
+			<div style="background:#fff;	width:100%;	box-shadow:0px 3px 4px 2px #44444469;-moz-box-shadow:0px 3px 4px 2px #44444469;	-ms-box-shadow:0px 3px 4px 2px #44444469;	border-radius:20px;" class="caixa  pb-4">
+				<div style="clip-path: none;margin-bottom:1rem" class="thumb"><img src="{{courseimage}}" class="d-block w-100" alt="{{fullname}}"></div>															
 				<div>
-					<small class="small text-uppercase pb-3 d-block text-end px-3">{{fullname}}</small>
-					<h4 class="text-center h4 text-vermelho-conteporaneo">{{shortname}}</h4>
+						<small class="small text-uppercase pb-3 d-block text-end px-3">Curso {{id}}</small>
+					<h4 style="line-height: 1.3rem;    margin-bottom: 1.4rem;    font-size: 1.2rem; color:#8d0333" class="text-center h4 text-vermelho-conteporaneo">{{fullname}}</h4>
 					
 					<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-						<small class="small"><i class="fa-solid fa-handshake"></i>{{fullname}}</small>
-						<small class="small"><b>{{percentage}}</b> completo</small>
+						<small class="small"><i class="fa-solid fa-handshake"></i>{{category}}teste</small>
+						<small class="small"><b>{{coursepercentage}}{{percentage}}</b>{{progress}}</small>
 					</div>
-					<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
+					<a href="{{viewurl}}&page=introduction" style="background:#8d0333!important;color:#fff;border-color:#8d0333" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
 				</div>
 			</div>
 		</div>

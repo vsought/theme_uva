@@ -16,55 +16,22 @@
 }}
 
 {{>theme_uva/inc_start}}
-<div class="central">
+<div class="titulo-wrapper">
+    <h1 class="red-color " style="color: #861C40;">Bem-vindo ao ambiente de aprendizagem online da
+        <span class="titulo-destaque" >UFMA VIRTUAL</span>
+    </h1>
+</div>
 
-    <div class="mt-5">
-
-        <div style="width: 80%;
-                    padding: 15px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-bottom: 1px solid #861C40;
-                    /*margin: 0 auto;*/
-                    margin-bottom: 35px;
-                    margin-top: 35px;">
-            <h1 style="color: #861C40;">Bem-vindo ao ambiente de aprendizagem online da 
-                <span style="color: #861C40;
-                            font-weight: bold;
-                            padding-bottom: 20px;
-                            border-bottom: 3px solid #861C40;
-                            font-size: 2rem;">UFMA VIRTUAL
-                </span>
-            </h1>
-        </div>
-
-        <main style="min-height: 695px;
-                    /* padding-top: 60px;
-                    padding-bottom: 60px; */
-                    background-image: url('{{config.wwwroot}}/theme/uva/pix/ufma.png');
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    display: flex;
-                    align-items: center;
-                    justify-content: end;
-                    margin-bottom: 50px;">
-            <div class="login" style="background-color: rgba(255, 255, 255, .7);
-                                        backdrop-filter: blur( 13.5px );
-                                        -webkit-backdrop-filter: blur( 13.5px );
-                                        border-radius: 10px;
-                                        padding: 40px 30px;
-                                        margin-right: 50px;
-                                        width: 35%;
-                                        text-align: center;"> 
-                <div class="logo" style="margin-bottom: 25px;">
-                    <img src="{{config.wwwroot}}/theme/uva/pix/ufma_virtual_logo.png" alt="Logo UFMA Virtual">
-                </div>
-                {{! <p>cadastre-se</p> }}
+<main class="base_login" style="background-image: url({{config.wwwroot}}/theme/uva/pix/ufma.png);">
+        <div class="login" style="">
+            <div class="logo" style="margin-bottom: 25px;">
+                <img src="{{config.wwwroot}}/theme/uva/pix/ufma_virtual_logo.png" alt="Logo UFMA Virtual">
+            </div>
+            <div role="main"><span id="maincontent"></span>
                 {{{ output.main_content }}}
-            </div>  
-        </main>
+            </div>
+        </div>
+    </main>
     
     
     {{>theme_uva/footer}}
