@@ -5,6 +5,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+		  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 		
 		<link rel="stylesheet" type="text/css" href="css/lightslider.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -418,7 +419,7 @@
 			<div class="row justify-content-between">
 				<div class="col-md-12 col-lg-3 media">
 					<span class="text-uppercase d-flex mb-4">
-					<i class="fa-solid fa-location-dot h2 mb-0"></i>
+					<i class="fas fa-map-marker-alt h2 mb-0"></i>
 					<p style="margin-left:1rem"><b>UFMA</b> virtual <small class="d-block">Localização</small></p>
 					</span>
 					<small class="d-block">Avenida dos Portugueses, 1966, Bacanga  </small>
