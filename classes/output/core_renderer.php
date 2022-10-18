@@ -180,7 +180,7 @@ class core_renderer extends \theme_boost\output\core_renderer {
       'tutorialurl' => $CFG->wwwroot . '/local/tutorial/',
     ];
 
-    $nav_html = $this->render_from_template('theme_mtur/navbar_links', $templatecontext);
+    $nav_html = $this->render_from_template('theme_uva/navbar_links', $templatecontext);
 
     return $nav_html . $this->navbar_plugin_output();
   }*/
@@ -222,12 +222,24 @@ class core_renderer extends \theme_boost\output\core_renderer {
       'username' => $USER->firstname . ' ' . $USER->lastname,
       //'navbar_links' => $links,
       /*'links_incourse' => $links_incourse,*/
-      /*'navbar_support' => $this->render_from_template('theme_mtur/navbar_support', null),*/
+      /*'navbar_support' => $this->render_from_template('theme_uva/navbar_support', null),*/
       'is_admin' => is_siteadmin(),
       'is_guest' => isguestuser(),
       //'incourse' => $incourse,
     ];
     return $this->render_from_template('theme_uva/header', $templatecontext);
+  }
+
+  /*
+   * Returns default pix folder.
+   *
+   * @return string
+   */
+  public function get_pix_image_url_base()
+  {
+    global $CFG;
+
+    return $CFG->wwwroot . "/theme/uva/pix/";
   }
 
 }

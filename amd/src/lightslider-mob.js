@@ -1,31 +1,4 @@
-<!-- <script src="{{config.wwwroot}}/theme/saiteava/pix/assets/owl.carousel.min.js"></script> }}-->
-
-
-<h1 class="titulo"><span>Cursos disponíveis</span></h1>
-<div class="item cursos_disponiveis">
-  <div class="lSSlideOuter">
-    <div class="lSSlideWrapper usingCss" style="transition-duration: 400ms; transition-timing-function: ease;">
-      <ul id="lightslider-demo" class="content-slider lightSlider lSSlide row">
-        {{#courses}}
-          <li class="lslide" style="width: 405.333px;">
-            {{< theme_uva/course_card }}
-            {{$url}}{{link}}{{/url}}
-            {{$coursename}}{{name}}{{/coursename}}
-            {{$courseimage}}{{{image}}}{{/courseimage}}
-            {{$description}}{{{description}}}{{/description}}
-            {{/ theme_uva/course_card }}
-          </li>
-        {{/courses}}
-        {{^courses}}
-          <h4 class="text-center h1 alt text-vermelho-conteporaneo p-4">Não temos cursos disponíveis no momento :(</h4>
-        {{/courses}}
-      </ul>
-    </div>
-  </div>
-</div>
-
-<script>
-	/*!
+/*!
  * Fullscreen extension for jQuery Magnify (http://thdoan.github.io/magnify/)
  *
  * Released under the MIT License. Read a copy of the license in the LICENSE file or at
@@ -301,10 +274,3 @@ $(document).ready(function() {
   //$('#banner iframe').magnify();
 
 });
-
-</script>
-
-
-
-
-

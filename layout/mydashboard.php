@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /*
- * @package   theme_mtur
- * @copyright 2019 Grupo Saite
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package   theme_uva
+ * @copyright 
+ * @license   
  */
 
 defined('MOODLE_INTERNAL') || die();
