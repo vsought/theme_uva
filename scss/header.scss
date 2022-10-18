@@ -1,4 +1,8 @@
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+@import  "fontawesome" ; 
+@import  "bootstrap" ; 
+@import  "moodle" ;
+
 
 // :root{
 //     --primary-color:#861C40;
@@ -286,7 +290,7 @@ body{
 
 
 /*notificações*/
-.cabecalho .user .icone{position:relative;width:37px;height:31px;display:inline-block;background:url(../img/ico-sino.png) no-repeat; background-size:contain;margin:12px 20px;}
+.cabecalho .user .icone{position:relative;width:37px;height:31px;display:inline-block; background:url(/theme/uva/pix/sino.png) no-repeat; background-size:contain;margin:12px 20px;}
 .cabecalho .user .icone span{position: absolute;    right: -3px;    padding: 3px 0;    background: red;    color: #fff;    text-align: center;    display: flex;    align-items: center;    border-radius: 50px;    min-width: 24px;    justify-content: center;    top: -6px;    font-size: .76rem;}
 
 .cabecalho .menutopo li{display:inline-block;}
