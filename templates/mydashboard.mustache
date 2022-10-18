@@ -1,150 +1,15 @@
 {{> theme_uva/inc_start}}
 <div class="central">
 		{{> theme_uva/header}}
-
+		
 		<div class="container mt-4">		
 			<!--Cursos disponiveis-->	
 			<h1 class="titulo text-vermelho-conteporaneo"><span>Meus Cursos</span></h1>
 			<div class="cursos_disponiveis meus_cursos">
-			{{{output.main_content}}}
-				{{! <div class="row"> }}
-				
-				
-					{{! <!--Lado Esquerdo-->
-					<div class="col-lg-3 mb-4">
-						<div class="busca_cursos">
-							<div class="dropdown">
-							  <a class="btn btn-secondary btn-vermelho-conteporaneo dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Todos
-							  </a>
-
-							  <ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Todos os curso</a></li>
-								<li><a class="dropdown-item" href="#">Por categoria</a></li>
-								<li><a class="dropdown-item" href="#">Mais acessados</a></li>
-							  </ul>
-							</div>
-							
-							<div class="input-group mb-3 mt-3">
-							  <input type="text" class="form-control alt altborder" placeholder="Buscar" aria-label="Recipient's username" aria-describedby="button-addon2">
-							  <button class="btn btn-outline-secondary icobusca" type="button" id="button-addon2">buscar</button>
-							</div>
-							
-							<div class="dropdown">
-							  <a class="btn btn-outline-secondary dropdown-toggle w-100 altborder" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Ordernar por nome do curso
-							  </a>
-
-							  <ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#">Todos os curso</a></li>
-								<li><a class="dropdown-item" href="#">Por categoria</a></li>
-								<li><a class="dropdown-item" href="#">Mais acessados</a></li>
-							  </ul>
-							</div>
-						</div>
-					</div> }}
-					
-							<!--Lado DIreito-->
-					{{! <div class="col-lg-9">
-						<div class="row">
-							<div class="col-lg-4 col-sm-6  mb-5 d-flex">
-							<div class="caixa  pb-4">
-								<div class="thumb"><img src="img/image01.jpeg" class="d-block w-100" alt="..."></div>															
-								<div>
-										<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 1</small>
-									<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-									
-									<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-										<small class="small"><i class="fa-solid fa-handshake"></i> Empreendedorismo</small>
-										<small class="small"><b>5%</b> completo</small>
-									</div>
-									<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-								</div>
-							</div>
-							</div>
-							<div class="col-lg-4 col-sm-6  mb-5 f-flex">
-								<div class="caixa  pb-4">
-									<div class="thumb"><img src="img/image02.jpeg" class="d-block w-100" alt="..."></div>
-									<div>
-											<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 2</small>
-										<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-										
-										<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-											<small class="small"><i class="fa-solid fa-graduation-cap"></i> Educação</small>
-											<small class="small"><b>5%</b> completo</small>
-										</div>
-										<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6  mb-5 d-flex">
-								<div class="caixa pb-4">
-									<div class="thumb"><img src="img/image03.jpeg" class="d-block w-100" alt="..."></div>
-									<div>
-												<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 3</small>
-											<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-											
-											<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-												<small class="small"><i class="fa-sharp fa-solid fa-microchip"></i> Tecnologia</small>
-												<small class="small"><b>5%</b> completo</small>
-											</div>
-											<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-									</div>
-								</div>
-							</div>
-							
-							<div class="col-lg-4 col-sm-6  mb-5 d-flex">
-							<div class="caixa  pb-4">
-								<div class="thumb"><img src="img/image01.jpeg" class="d-block w-100" alt="..."></div>															
-								<div>
-										<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 1</small>
-									<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-									
-									<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-										<small class="small"><i class="fa-solid fa-handshake"></i> Empreendedorismo</small>
-										<small class="small"><b>5%</b> completo</small>
-									</div>
-									<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-								</div>
-							</div>
-							</div>
-							<div class="col-lg-4 col-sm-6  mb-5 f-flex">
-								<div class="caixa  pb-4">
-									<div class="thumb"><img src="img/image02.jpeg" class="d-block w-100" alt="..."></div>
-									<div>
-											<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 2</small>
-										<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-										
-										<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-											<small class="small"><i class="fa-solid fa-graduation-cap"></i> Educação</small>
-											<small class="small"><b>5%</b> completo</small>
-										</div>
-										<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-4 col-sm-6  mb-5 d-flex">
-								<div class="caixa pb-4">
-									<div class="thumb"><img src="img/image03.jpeg" class="d-block w-100" alt="..."></div>
-									<div>
-												<small class="small text-uppercase pb-3 d-block text-end px-3"> Curso 3</small>
-											<h4 class="text-center h4 text-vermelho-conteporaneo">Elaboração e estruturação de projetos de pesquisas</h4>
-											
-											<div class="d-flex p-3 pt-0 justify-content-between text-uppercase mb-4">
-												<small class="small"><i class="fa-sharp fa-solid fa-microchip"></i> Tecnologia</small>
-												<small class="small"><b>5%</b> completo</small>
-											</div>
-											<a href="" class="btn btn-primary btn-vermelho-conteporaneo text-uppercase rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div> }}
-				{{! </div> }}
+				{{{output.main_content}}}
 			</div>
 					
-		</div>
-		{{output.main_content}}
+		</div>	
 	<!--Rodape-->
 	{{> theme_uva/footer}}
     

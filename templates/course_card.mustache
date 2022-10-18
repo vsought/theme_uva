@@ -1,17 +1,12 @@
 
 
-	<div class="thumb"><img src="{{config.wwwroot}}/theme/uva/pix/ufma.png" class="d-block w-100" alt="..."></div>
-	<div class="d-flex py-3 pt-0 justify-content-between text-uppercase">
-		<small class="small"><i class="fa-solid fa-handshake"></i>{{category}}</small>
-		<small class="small"><b><i class="fa-solid fa-circle text-success"></i>{{status}}</b></small>
-	</div>							
-	<div>
-		<h4 class="text-center h4 text-vermelho-conteporaneo">{{name}}</h4>
-		<small class="texto mb-4">{{description}}</small>
-		<a href="{{link}}" class="btn btn-primary btn-vermelho-conteporaneo rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
-	</div>
-
-
-		
-				
-				
+<div class="thumb"><img src="{{$courseimage}}{{/courseimage}}" class="d-block w-100" alt="{{$coursename}}{{/coursename}}"></div>
+<div class="d-flex py-3 pt-0 justify-content-between text-uppercase">
+	<small class="small"><i class="fa-solid fa-handshake"></i>{{category}}</small>
+	<small class="small"><b><i class="fa-solid fa-circle text-success"></i>{{status}}</b></small>
+</div>
+<div>
+	<h4 class="text-center h4 text-vermelho-conteporaneo">{{$coursename}}{{/coursename}}</h4>
+	<small class="texto mb-4">{{$description}}{{/description}}</small>
+	<a href="{{link}}" class="btn btn-primary btn-vermelho-conteporaneo rounded-5 m-auto btn-sm d-table px-4">Saiba mais</a>
+</div>
